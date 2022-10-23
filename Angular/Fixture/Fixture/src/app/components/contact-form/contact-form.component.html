@@ -1,0 +1,84 @@
+<div class="wrapper-box">
+  <div class="containerForm">
+    <div class="row">
+      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+        <div class="row input-container">
+          <h4 style="text-align:center">Datos del participante</h4>
+          <div class="col-md-6 col-sm-12">
+            <div class="form-group">
+              <div class="styled-input wide">
+                <label for="name"></label>
+                <input type="text"
+                       class="form-control"
+                       name="Name"
+                       placeholder="Nombre"
+                       formControlName="Name" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="form-group">
+              <div class="styled-input wide">
+                <label for="surname"></label>
+                <input type="text"
+                       class="form-control"
+                       name="Surname"
+                       placeholder="Apellido"
+                       formControlName="Surname" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <div class="form-group">
+              <div class="styled-input wide">
+                <label for="dni"></label>
+                <input type="number"
+                       class="form-control"
+                       name="Dni"
+                       placeholder="DNI"
+                       formControlName="Dni" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="form-group">
+              <div class="styled-input">
+                <label for="Email"></label>
+                <input type="email"
+                       class="form-control"
+                       name="Email"
+                       aria-describedby="emailHelp"
+                       placeholder="Ingresar correo"
+                       formControlName="Email" />
+                <small id="emailHelp" class="form-text text-muted"></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+            <div class="form-group">
+              <div class="styled-input" style="float:right;">
+                <label for="tel"></label>
+                <input type="tel"
+                       class="form-control"
+                       name="Tel"
+                       placeholder="Teléfono"
+                       formControlName="Tel" />
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <button type="submit"
+                    class="btn-lrg submit-btn"
+                    [disabled]="!FormData.valid">
+              Enviar
+            </button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>

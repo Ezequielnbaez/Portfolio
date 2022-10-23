@@ -1,0 +1,2 @@
+D:\Programacion\Web\Proyectos\Portfolio\Angular\Fixture\Fixture\obj\Debug\Fixture.esproj.SuggestedBindingRedirects.cache
+D:\Programacion\Web\Proyectos\Portfolio\Angular\Fixture\Fixture\obj\Debug\Fixture.esproj.CoreCompileInputs.cache

@@ -1,0 +1,48 @@
+<swiper [slidesPerView]=sliderCount
+        [spaceBetween]="20"
+        [navigation]="true"
+        [centeredSlides]="false"
+        [keyboard]="{
+    enabled: true
+  }"
+        [virtual]="true"
+        class="my-swiper">
+
+  <ng-template swiperSlide>
+    <div class="swiper-slide-container">
+      <app-listcount class="item" [group]="'A'"></app-listcount>
+     </div>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <app-listcount class="item" [group]="'B'"></app-listcount>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <app-listcount class="item" [group]="'C'"></app-listcount>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <app-listcount class="item" [group]="'D'"></app-listcount>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <app-listcount class="item" [group]="'E'"></app-listcount>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <app-listcount class="item" [group]="'F'"></app-listcount>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <app-listcount class="item" [group]="'G'"></app-listcount>
+  </ng-template>
+
+  <ng-template swiperSlide>
+    <app-listcount class="item" [group]="'H'"></app-listcount>
+  </ng-template>
+
+</swiper>
+
+
+

@@ -1,0 +1,19 @@
+.country{
+  width: 100%;
+  position: relative;
+  border-top: 1px dotted #4b152230;
+}
+
+.name {
+  width: calc(66% - 30px);
+  display: inline-block;
+  padding: 8px 0 8px 40px;
+  color: #4b1522;
+  font-family: suecananolight;
+  letter-spacing: -.02rem;
+}
+
+.radio1 {
+  margin-right: 6px;
+}
+

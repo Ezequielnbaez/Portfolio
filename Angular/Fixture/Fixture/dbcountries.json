@@ -1,0 +1,228 @@
+{
+  "countries": [
+    {
+      "id": 0,
+      "name": "Qatar",
+      "group": "A",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 1,
+      "name": "Ecuador",
+      "group": "A",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 2,
+      "name": "Senegal",
+      "group": "A",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 3,
+      "name": "Holanda",
+      "group": "A",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 4,
+      "name": "Inglaterra",
+      "group": "B",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 5,
+      "name": "Irán",
+      "group": "B",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 6,
+      "name": "EE.UU.",
+      "group": "B",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 7,
+      "name": "Gales",
+      "group": "B",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 8,
+      "name": "Argentina",
+      "group": "C",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 9,
+      "name": "A. Saudita",
+      "group": "C",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 10,
+      "name": "México",
+      "group": "C",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 11,
+      "name": "Polonia",
+      "group": "C",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 12,
+      "name": "Francia",
+      "group": "D",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 13,
+      "name": "Australia",
+      "group": "D",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 14,
+      "name": "Dinamarca",
+      "group": "D",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 15,
+      "name": "Túnez",
+      "group": "D",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 16,
+      "name": "España",
+      "group": "E",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 17,
+      "name": "Costa Rica",
+      "group": "E",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 18,
+      "name": "Alemania",
+      "group": "E",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 19,
+      "name": "Japón",
+      "group": "E",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 20,
+      "name": "Bélgica",
+      "group": "F",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 21,
+      "name": "Canadá",
+      "group": "F",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 22,
+      "name": "Marruecos",
+      "group": "F",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 23,
+      "name": "Croacia",
+      "group": "F",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 24,
+      "name": "Brasil",
+      "group": "G",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 25,
+      "name": "Serbia",
+      "group": "G",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 26,
+      "name": "Suizo",
+      "group": "G",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 27,
+      "name": "Camerún",
+      "group": "G",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 28,
+      "name": "Portugal",
+      "group": "H",
+      "first": false,
+      "second": false
+    },
+    {
+      "id": 29,
+      "name": "Ghana",
+      "group": "H",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 30,
+      "name": "Uruguay",
+      "group": "H",
+      "first": true,
+      "second": false
+    },
+    {
+      "id": 31,
+      "name": "R. de Corea",
+      "group": "H",
+      "first": false,
+      "second": false
+    }
+  ]
+}

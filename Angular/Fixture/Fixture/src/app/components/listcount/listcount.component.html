@@ -1,0 +1,15 @@
+<div class="group">
+  <div class="head">
+    <div class="name">GRUPO {{group}}</div>
+    <div class="position">
+      <div class="number">1°</div>
+      <div class="number">2°</div>
+    </div>
+
+  </div>
+
+  <app-countries-item (pos1)="updatePos1($event)" (pos2)="updatePos2($event)" *ngFor="let country of countries;"
+                      [country]="country" [group]="group">
+  </app-countries-item>
+
+</div>
