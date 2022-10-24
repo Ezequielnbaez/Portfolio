@@ -39,7 +39,6 @@ export class CountrySlideComponent implements OnInit {
     else {
       this.swiperConfig(3)
     }
-    console.log(this.getScreenWidth)
   }
 
   swiperConfig(slidesPerView: number) {

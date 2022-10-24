@@ -10,31 +10,44 @@ import { PositionsService } from "../../services/positions.service";
 })
 export class FixtureComponent implements OnInit {
 
-  pos1a: string = '1°a';
-  pos2b: string = '2°b';
-  pos1c: string = '1°c';
-  pos2d: string = '2°d';
-  pos1e: string = '1°e';
-  pos2f: string = '2°f';
-  pos1g: string = '1°g';
-  pos2h: string = '2°h';
-  pos1b: string = '1°b';
-  pos2a: string = '2°a';
-  pos1d: string = '1°d';
-  pos2c: string = '2°c';
-  pos1f: string = '1°f';
-  pos2e: string = '2°e';
-  pos1h: string = '1°h';
-  pos2g: string = '2°g';
+  pos1a: string = '';
+  pos2b: string = '';
+  pos1c: string = '';
+  pos2d: string = '';
+  pos1e: string = '';
+  pos2f: string = '';
+  pos1g: string = '';
+  pos2h: string = '';
+  pos1b: string = '';
+  pos2a: string = '';
+  pos1d: string = '';
+  pos2c: string = '';
+  pos1f: string = '';
+  pos2e: string = '';
+  pos1h: string = '';
+  pos2g: string = '';
+
+  posg8a: string = '';
+  posg8b: string = '';
+  posg8c: string = '';
+  posg8d: string = '';
+  posg8e: string = '';
+  posg8f: string = '';
+  posg8g: string = '';
+  posg8h: string = '';
+
+  posg4a: string = '';
+  posg4b: string = '';
+  posg4c: string = '';
+  posg4d: string = '';
+
+  posg2a: string = '';
+  posg2b: string = '';
+
+  posg1a: string = '';
 
   constructor(private appService: PositionsService) { }
 
-  public reservationForm: FormGroup = new FormGroup({
-    Octavos: new FormControl('', [Validators.required], []),
-    Cuartos: new FormControl('', [Validators.required], []),
-    Semi: new FormControl('', [Validators.required], []),
-    Final: new FormControl('', [Validators.required], []),
-  });
 
   ngOnInit(): void {
     this.appService.currentPosition1a.subscribe(pos1 => this.pos1a = pos1);
@@ -55,6 +68,109 @@ export class FixtureComponent implements OnInit {
     this.appService.currentPosition2h.subscribe(pos2 => this.pos2h = pos2);
   }
 
-  
+  selectPos(event: Event) {
+ 
+    switch ((event.target as HTMLInputElement).id) {
+      case 'mob_1a':
+        this.posg8a = this.pos1a;
+        break;
+      case 'mob_1b':
+        this.posg8e = this.pos1b;
+        break;
+      case 'mob_1c':
+        this.posg8b = this.pos1c;
+        break;
+      case 'mob_1d':
+        this.posg8f = this.pos1d;
+        break;
+      case 'mob_1e':
+        this.posg8c = this.pos1e;
+        break;
+      case 'mob_1f':
+        this.posg8g = this.pos1f;
+        break;
+      case 'mob_1g':
+        this.posg8d = this.pos1g;
+        break;
+      case 'mob_1h':
+        this.posg8h = this.pos1h;
+        break;
+
+      case 'mob_2a':
+        this.posg8e = this.pos2a;
+        break;
+      case 'mob_2b':
+        this.posg8a = this.pos2b;
+        break;
+      case 'mob_2c':
+        this.posg8f = this.pos2c;
+        break;
+      case 'mob_2d':
+        this.posg8b = this.pos2d;
+        break;
+      case 'mob_2e':
+        this.posg8g = this.pos2e;
+        break;
+      case 'mob_2f':
+        this.posg8c = this.pos2f;
+        break;
+      case 'mob_2g':
+        this.posg8h = this.pos2g;
+        break;
+      case 'mob_2h':
+        this.posg8d = this.pos2h;
+        break;
+
+      case 'mobCuartos1':
+        this.posg4a = this.posg8a;
+        break;
+      case 'mobCuartos2':
+        this.posg4a = this.posg8b;
+        break;
+      case 'mobCuartos3':
+        this.posg4b = this.posg8c;
+        break;
+      case 'mobCuartos4':
+        this.posg4b = this.posg8d;
+        break;
+      case 'mobCuartos5':
+        this.posg4c = this.posg8e;
+        break;
+      case 'mobCuartos6':
+        this.posg4c = this.posg8f;
+        break;
+      case 'mobCuartos7':
+        this.posg4d = this.posg8g;
+        break;
+      case 'mobCuartos8':
+        this.posg4d = this.posg8h;
+        break;
+
+      case 'mobSemis1':
+        this.posg2a = this.posg4a;
+        break;
+      case 'mobSemis2':
+        this.posg2a = this.posg4b;
+        break;
+      case 'mobSemis3':
+        this.posg2b = this.posg4c;
+        break;
+      case 'mobSemis4':
+        this.posg2b = this.posg4d;
+        break;
+
+      case 'mobFinal1':
+        this.posg1a = this.posg4a;
+        break;
+      case 'mobFinal2':
+        this.posg1a = this.posg4b;
+        break;
+
+      default:
+        break;
+
+             
+    }
+  }
 
 }
