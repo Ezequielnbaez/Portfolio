@@ -10,6 +10,10 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\Fixture</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="nodejs-express-sequelize-mysql\app\config\" />
+    <Folder Include="nodejs-express-sequelize-mysql\app\routes\" />
+  </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
       <UserProperties dbcountries_1json__JsonSchema="https://appliedengdesign.github.io/cnccodes-json-schema/draft/2022-07/schema" />

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms'
-import { ServicesService } from '../../services/contact.service';
-
+import { Fixture } from 'src/app/models/fixture.model';
+import { ContactService } from 'src/app/services/contact.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -10,8 +10,8 @@ import { ServicesService } from '../../services/contact.service';
 })
 export class ContactFormComponent implements OnInit {
   FormData!: FormGroup;
-  constructor(private builder: FormBuilder, private contact: ServicesService) { }
-
+  constructor(private builder: FormBuilder, private contactService: ContactService) { }
+  submitted = false;
   ngOnInit() {
     this.FormData = this.builder.group({
       Name: new FormControl('', [Validators.required]),
@@ -23,16 +23,23 @@ export class ContactFormComponent implements OnInit {
   }
 
 
-  onSubmit(FormData) {
-    console.log(FormData)
-    this.contact.PostMessage(FormData)
-      .subscribe(response => {
-        location.href = 'https://mailthis.to/confirm'
-        console.log(response)
-      }, error => {
-        console.warn(error.responseText)
-        console.log({ error })
-      })
+  saveFixture(form: FormGroup) {
+    const data = {
+      name: form.get('Name')?.value,
+      surname: form.get('Surname')?.value,
+      dni: form.get('Dni')?.value,
+      email: form.get('Email')?.value,
+      tel: form.get('Tel')?.value
+    };
+    this.contactService.create(data)
+      .subscribe({
+        next: (res) => {
+          console.log(res);
+          this.submitted = true;
+        },
+        error: (e) => console.error(e)
+      });
   }
+
 }
 

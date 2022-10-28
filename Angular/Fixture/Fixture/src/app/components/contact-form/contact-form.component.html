@@ -1,7 +1,7 @@
 <div class="wrapper-box">
   <div class="containerForm">
     <div class="row">
-      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+      <form [formGroup]="FormData" (ngSubmit)="saveFixture(FormData)">
         <div class="row input-container">
           <h4 style="text-align:center">Datos del participante</h4>
           <div class="col-md-6 col-sm-12">
@@ -76,6 +76,9 @@
                     [disabled]="!FormData.valid">
               Enviar
             </button>
+            <div *ngIf="submitted">
+              <h4>Enviado con éxito!</h4>
+            </div>
           </div>
         </div>
         </form>
