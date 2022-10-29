@@ -12,6 +12,8 @@ export class ContactFormComponent implements OnInit {
   FormData!: FormGroup;
   constructor(private builder: FormBuilder, private contactService: ContactService) { }
   submitted = false;
+  error = false;
+
   ngOnInit() {
     this.FormData = this.builder.group({
       Name: new FormControl('', [Validators.required]),
@@ -36,8 +38,13 @@ export class ContactFormComponent implements OnInit {
         next: (res) => {
           console.log(res);
           this.submitted = true;
+          this.error = false;
         },
-        error: (e) => console.error(e)
+        error: (e) => {
+          console.log(e);
+          this.submitted = false;
+          this.error=true;
+        }
       });
   }
 

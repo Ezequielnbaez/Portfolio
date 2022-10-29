@@ -9,7 +9,10 @@ module.exports = (sequelize, Sequelize) => {
     dni: {
       type: Sequelize.INTEGER,
       allowNull: false,
-      unique: true
+      unique: {
+        args: true,
+        msg: 'Dni already in use!'
+      }
     },
     email: {
       type: Sequelize.STRING
