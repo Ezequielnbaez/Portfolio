@@ -20,7 +20,6 @@ export class ListcountComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
     this.countryService.getCountries().subscribe((countries) => {
       for (let country of countries) {
         if (country.group === this.group) {
@@ -33,74 +32,98 @@ export class ListcountComponent implements OnInit {
 
 
   updatePos1(position1) {
+    
+    this.appService.resetPositions(this.position1);
+    this.position1 = position1;
+
     switch (this.group) {
       case 'A': {
-        this.appService.updatePosition1a(position1);
+
+        this.appService.updatePosition1a(this.position1);
         break;
       }
       case 'B': {
-        this.appService.updatePosition1b(position1);
+        
+        this.appService.updatePosition1b(this.position1);
         break;
       }
       case 'C': {
-        this.appService.updatePosition1c(position1);
+
+        this.appService.updatePosition1c(this.position1);
         break;
       }
       case 'D': {
-        this.appService.updatePosition1d(position1);
+
+        this.appService.updatePosition1d(this.position1);
         break;
       }
       case 'E': {
-        this.appService.updatePosition1e(position1);
+ 
+        this.appService.updatePosition1e(this.position1);
         break;
       }
       case 'F': {
-        this.appService.updatePosition1f(position1);
+
+        this.appService.updatePosition1f(this.position1);
         break;
       }
       case 'G': {
-        this.appService.updatePosition1g(position1);
+  
+        this.appService.updatePosition1g(this.position1);
         break;
       }
       case 'H': {
-        this.appService.updatePosition1h(position1);
+
+        this.appService.updatePosition1h(this.position1);
         break;
       }
     }
   }
 
   updatePos2(position2) {
+
+    this.appService.resetPositions(this.position2);
+    this.position2 = position2;
+
     switch (this.group) {
       case 'A': {
-        this.appService.updatePosition2a(position2);
+
+        this.appService.updatePosition2a(this.position2);
         break;
       }
       case 'B': {
-        this.appService.updatePosition2b(position2);
+
+        this.appService.updatePosition2b(this.position2);
         break;
       }
       case 'C': {
-        this.appService.updatePosition2c(position2);
+
+        this.appService.updatePosition2c(this.position2);
         break;
       }
       case 'D': {
-        this.appService.updatePosition2d(position2);
+
+        this.appService.updatePosition2d(this.position2);
         break;
       }
       case 'E': {
-        this.appService.updatePosition2e(position2);
+
+        this.appService.updatePosition2e(this.position2);
         break;
       }
       case 'F': {
-        this.appService.updatePosition2f(position2);
+
+        this.appService.updatePosition2f(this.position2);
         break;
       }
       case 'G': {
-        this.appService.updatePosition2g(position2);
+
+        this.appService.updatePosition2g(this.position2);
         break;
       }
       case 'H': {
-        this.appService.updatePosition2h(position2);
+
+        this.appService.updatePosition2h(this.position2);
         break;
       }
 

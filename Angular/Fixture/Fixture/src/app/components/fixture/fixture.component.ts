@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { PositionsService } from "../../services/positions.service";
 
 
@@ -66,104 +65,153 @@ export class FixtureComponent implements OnInit {
     this.appService.currentPosition2g.subscribe(pos2 => this.pos2g = pos2);
     this.appService.currentPosition1h.subscribe(pos1 => this.pos1h = pos1);
     this.appService.currentPosition2h.subscribe(pos2 => this.pos2h = pos2);
-  }
 
+
+    this.appService.currentPositiong8a.subscribe(pos2 => this.posg8a = pos2);
+    this.appService.currentPositiong8b.subscribe(pos2 => this.posg8b = pos2);
+    this.appService.currentPositiong8c.subscribe(pos2 => this.posg8c = pos2);
+    this.appService.currentPositiong8d.subscribe(pos2 => this.posg8d = pos2);
+    this.appService.currentPositiong8e.subscribe(pos2 => this.posg8e = pos2);
+    this.appService.currentPositiong8f.subscribe(pos2 => this.posg8f = pos2);
+    this.appService.currentPositiong8g.subscribe(pos2 => this.posg8g = pos2);
+    this.appService.currentPositiong8h.subscribe(pos2 => this.posg8h = pos2);
+
+    this.appService.currentPositiong4a.subscribe(pos2 => this.posg4a= pos2);
+    this.appService.currentPositiong4b.subscribe(pos2 => this.posg4b = pos2);
+    this.appService.currentPositiong4c.subscribe(pos2 => this.posg4c = pos2);
+    this.appService.currentPositiong4d.subscribe(pos2 => this.posg4d = pos2);
+
+    this.appService.currentPositiong2a.subscribe(pos2 => this.posg2a = pos2);
+    this.appService.currentPositiong2b.subscribe(pos2 => this.posg2b = pos2);
+
+    this.appService.currentPositiong1a.subscribe(pos2 => this.posg1a = pos2);
+
+  }
+  
   selectPos(event: Event) {
  
     switch ((event.target as HTMLInputElement).id) {
       case 'mob_1a':
-        this.posg8a = this.pos1a;
+        this.appService.updatePositiong8a(this.pos1a);
         break;
       case 'mob_1b':
-        this.posg8e = this.pos1b;
+        this.appService.updatePositiong8b(this.pos1b);
         break;
       case 'mob_1c':
-        this.posg8b = this.pos1c;
+        this.appService.updatePositiong8c(this.pos1c);
         break;
       case 'mob_1d':
-        this.posg8f = this.pos1d;
+        this.appService.updatePositiong8d(this.pos1d);
+
         break;
       case 'mob_1e':
-        this.posg8c = this.pos1e;
+        this.appService.updatePositiong8e(this.pos1e);
+
         break;
       case 'mob_1f':
-        this.posg8g = this.pos1f;
+        this.appService.updatePositiong8f(this.pos1f);
+
         break;
       case 'mob_1g':
-        this.posg8d = this.pos1g;
+        this.appService.updatePositiong8g(this.pos1g);
+
         break;
       case 'mob_1h':
-        this.posg8h = this.pos1h;
+        this.appService.updatePositiong8h(this.pos1h);
+
         break;
 
+
       case 'mob_2a':
-        this.posg8e = this.pos2a;
+        this.appService.updatePositiong8a(this.pos2a);
+
         break;
       case 'mob_2b':
-        this.posg8a = this.pos2b;
+        this.appService.updatePositiong8b(this.pos2b);
+
         break;
       case 'mob_2c':
-        this.posg8f = this.pos2c;
+        this.appService.updatePositiong8c(this.pos2c);
+
         break;
       case 'mob_2d':
-        this.posg8b = this.pos2d;
+        this.appService.updatePositiong8d(this.pos2d);
+
         break;
       case 'mob_2e':
-        this.posg8g = this.pos2e;
+        this.appService.updatePositiong8e(this.pos2e);
+
         break;
       case 'mob_2f':
-        this.posg8c = this.pos2f;
+        this.appService.updatePositiong8f(this.pos2f);
+
         break;
       case 'mob_2g':
-        this.posg8h = this.pos2g;
+        this.appService.updatePositiong8g(this.pos2g);
+
         break;
       case 'mob_2h':
-        this.posg8d = this.pos2h;
+        this.appService.updatePositiong8h(this.pos2h);
+
         break;
 
       case 'mobCuartos1':
-        this.posg4a = this.posg8a;
+        this.appService.updatePositiong4a(this.posg8a);
+
         break;
       case 'mobCuartos2':
-        this.posg4a = this.posg8b;
+        this.appService.updatePositiong4a(this.posg8b);
+
         break;
       case 'mobCuartos3':
-        this.posg4b = this.posg8c;
+        this.appService.updatePositiong4b(this.posg8c);
+
         break;
       case 'mobCuartos4':
-        this.posg4b = this.posg8d;
+        this.appService.updatePositiong4b(this.posg8d);
+
         break;
       case 'mobCuartos5':
-        this.posg4c = this.posg8e;
+        this.appService.updatePositiong4c(this.posg8e);
+
         break;
       case 'mobCuartos6':
-        this.posg4c = this.posg8f;
+        this.appService.updatePositiong4c(this.posg8f);
+
         break;
       case 'mobCuartos7':
-        this.posg4d = this.posg8g;
+        this.appService.updatePositiong4d(this.posg8g);
+
         break;
       case 'mobCuartos8':
-        this.posg4d = this.posg8h;
+        this.appService.updatePositiong4d(this.posg8h);
+
         break;
 
       case 'mobSemis1':
-        this.posg2a = this.posg4a;
+        this.appService.updatePositiong2a(this.posg4a);
+
         break;
       case 'mobSemis2':
-        this.posg2a = this.posg4b;
+        this.appService.updatePositiong2a(this.posg4b);
+
         break;
       case 'mobSemis3':
-        this.posg2b = this.posg4c;
+        this.appService.updatePositiong2b(this.posg4c);
+
         break;
       case 'mobSemis4':
-        this.posg2b = this.posg4d;
+        this.appService.updatePositiong2b(this.posg4d);
+
         break;
 
       case 'mobFinal1':
-        this.posg1a = this.posg4a;
+        this.appService.updatePositiong1a(this.posg2a);
+
         break;
       case 'mobFinal2':
-        this.posg1a = this.posg4b;
+        this.appService.updatePositiong1a(this.posg2b);
+
         break;
 
       default:
