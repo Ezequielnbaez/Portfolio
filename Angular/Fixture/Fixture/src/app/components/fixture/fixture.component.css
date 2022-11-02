@@ -1,3 +1,7 @@
 .st0:hover {
-  transform: scale(1.01);
+  transform: translateY(1px);
+}
+
+.st0 {
+  fill: #00457E;
 }

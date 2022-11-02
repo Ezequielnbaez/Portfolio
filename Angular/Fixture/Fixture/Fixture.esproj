@@ -13,6 +13,7 @@
   <ItemGroup>
     <Folder Include="nodejs-express-sequelize-mysql\app\config\" />
     <Folder Include="nodejs-express-sequelize-mysql\app\routes\" />
+    <Folder Include="src\app\img\" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>

@@ -87,6 +87,8 @@ export class PositionsService {
   currentPositiong2b = this.posg2b.asObservable();
   currentPositiong1a = this.posg1a.asObservable();
 
+
+
   constructor() {
 
   }
@@ -223,12 +225,11 @@ export class PositionsService {
     this.posg1a.next(pos1)
   }
 
+  
   resetPositions(countryName: string) {
-    console.log(this.posg8a.value)
-    console.log(countryName)
+
     switch (countryName) {
       case (this.posg8a.value):
-        console.log("llegamo2");
         this.posg8a.next('');
         this.reset4th(countryName);
         break;
@@ -314,5 +315,23 @@ export class PositionsService {
       this.posg1a.next('');
     }
     
+  }
+
+  getFixtureCode() :string {
+    let code = '';
+    let arrCnt: Array<string> = [
+      this.pos1a.value, this.pos1b.value, this.pos2a.value, this.pos2b.value, this.pos1c.value,
+      this.pos2c.value, this.pos1d.value, this.pos2d.value, this.pos1e.value, this.pos2e.value,
+      this.pos1f.value, this.pos2f.value, this.pos1g.value, this.pos2g.value, this.pos1h.value,
+      this.pos2h.value, this.posg8a.value, this.posg8b.value, this.posg8c.value, this.posg8d.value,
+      this.posg8e.value, this.posg8f.value, this.posg8g.value, this.posg8h.value, this.posg4a.value,
+      this.posg4b.value, this.posg4c.value, this.posg4d.value, this.posg2a.value, this.posg2b.value,
+      this.posg1a.value
+    ];
+
+    for (let country of arrCnt) {
+      code += Array.from(country)[0];
+    }
+    return code;
   }
 }

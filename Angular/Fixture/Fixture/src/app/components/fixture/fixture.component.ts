@@ -95,25 +95,25 @@ export class FixtureComponent implements OnInit {
         this.appService.updatePositiong8a(this.pos1a);
         break;
       case 'mob_1b':
-        this.appService.updatePositiong8b(this.pos1b);
+        this.appService.updatePositiong8e(this.pos1b);
         break;
       case 'mob_1c':
-        this.appService.updatePositiong8c(this.pos1c);
+        this.appService.updatePositiong8b(this.pos1c);
         break;
       case 'mob_1d':
-        this.appService.updatePositiong8d(this.pos1d);
+        this.appService.updatePositiong8f(this.pos1d);
 
         break;
       case 'mob_1e':
-        this.appService.updatePositiong8e(this.pos1e);
+        this.appService.updatePositiong8c(this.pos1e);
 
         break;
       case 'mob_1f':
-        this.appService.updatePositiong8f(this.pos1f);
+        this.appService.updatePositiong8g(this.pos1f);
 
         break;
       case 'mob_1g':
-        this.appService.updatePositiong8g(this.pos1g);
+        this.appService.updatePositiong8d(this.pos1g);
 
         break;
       case 'mob_1h':
@@ -123,35 +123,35 @@ export class FixtureComponent implements OnInit {
 
 
       case 'mob_2a':
-        this.appService.updatePositiong8a(this.pos2a);
+        this.appService.updatePositiong8e(this.pos2a);
 
         break;
       case 'mob_2b':
-        this.appService.updatePositiong8b(this.pos2b);
+        this.appService.updatePositiong8a(this.pos2b);
 
         break;
       case 'mob_2c':
-        this.appService.updatePositiong8c(this.pos2c);
+        this.appService.updatePositiong8f(this.pos2c);
 
         break;
       case 'mob_2d':
-        this.appService.updatePositiong8d(this.pos2d);
+        this.appService.updatePositiong8b(this.pos2d);
 
         break;
       case 'mob_2e':
-        this.appService.updatePositiong8e(this.pos2e);
+        this.appService.updatePositiong8g(this.pos2e);
 
         break;
       case 'mob_2f':
-        this.appService.updatePositiong8f(this.pos2f);
+        this.appService.updatePositiong8c(this.pos2f);
 
         break;
       case 'mob_2g':
-        this.appService.updatePositiong8g(this.pos2g);
+        this.appService.updatePositiong8h(this.pos2g);
 
         break;
       case 'mob_2h':
-        this.appService.updatePositiong8h(this.pos2h);
+        this.appService.updatePositiong8d(this.pos2h);
 
         break;
 

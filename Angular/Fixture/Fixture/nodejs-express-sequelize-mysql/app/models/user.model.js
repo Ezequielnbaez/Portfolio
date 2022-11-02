@@ -20,6 +20,9 @@ module.exports = (sequelize, Sequelize) => {
     tel: {
       type: Sequelize.INTEGER
     },
+    code: {
+      type: Sequelize.STRING
+    }
   });
 
   return User;

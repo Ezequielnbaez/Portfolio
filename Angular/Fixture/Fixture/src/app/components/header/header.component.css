@@ -1,0 +1,47 @@
+.caja-header {
+  background-color: #470A20;
+}
+.mutual {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+  color: white;
+}
+.mutual img{
+  width: 80px;
+  height: 80px;
+}
+
+.sindicato {
+  float: right;
+  vertical-align: top;
+  display: inline-block;
+  width: 120px;
+  color: white;
+  text-align:center;
+}
+  .sindicato span {
+    margin-right:2px;
+  }
+  .sindicato img {
+    width: 80px;
+    height: 80px;
+  }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+a:active {
+  text-decoration: none;
+}

@@ -15,6 +15,9 @@ export class ListcountComponent implements OnInit {
   position1: string = '1';
   position2: string = '2';
 
+  countryAb1: string = '';
+  countryAb2: string = '';
+
   constructor(
     private countryService: CountryService, private appService: PositionsService
   ) { }
@@ -32,10 +35,9 @@ export class ListcountComponent implements OnInit {
 
 
   updatePos1(position1) {
-    
     this.appService.resetPositions(this.position1);
+    this.appService.resetPositions(this.position2);
     this.position1 = position1;
-
     switch (this.group) {
       case 'A': {
 
@@ -81,7 +83,7 @@ export class ListcountComponent implements OnInit {
   }
 
   updatePos2(position2) {
-
+    this.appService.resetPositions(this.position1);
     this.appService.resetPositions(this.position2);
     this.position2 = position2;
 

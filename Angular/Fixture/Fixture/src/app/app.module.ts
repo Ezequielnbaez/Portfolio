@@ -17,6 +17,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { FooterComponent } from './components/footer/footer.component';
 import { FixtureComponent } from './components/fixture/fixture.component';
 import { FormFixtureComponent } from './components/form-fixture/form-fixture.component';
+import { HeaderComponent } from './components/header/header.component';
 
 const appRoutes: Routes = [
   { path: '', component: ListcountComponent },
@@ -32,6 +33,7 @@ const appRoutes: Routes = [
     FooterComponent,
     FixtureComponent,
     FormFixtureComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

@@ -24,10 +24,11 @@
 }
 .caja-footer {
   border-top: 2px solid #88CAFF;
-  background-color: #E4E9E9;
+  background-color: #470A20;
   padding: 20px 0 20px 0;
   margin: 30px 0 0 0;
   font-size: 0.85em;
+  color: white;
 }
 .col-sm-4 {
   width: 30%;
@@ -331,7 +332,7 @@ footer {
 @media (max-width: 900px) {
   .caja-footer {
     border-top: 2px solid #88CAFF;
-    background-color: #E4E9E9;
+    background-color: #470A20;
     padding: 20px 0 20px 0;
     margin: 30px 0 0 0;
     font-size: 0.85em;
@@ -378,6 +379,6 @@ footer {
   padding-left: 0;
   text-decoration: none;
   color: #ffffff !important;
-  background-color: #55646A;
+  background-color: #00457E;
   border-color: #55646A;
 }

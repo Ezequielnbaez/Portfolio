@@ -4,225 +4,193 @@
       "id": 0,
       "name": "Qatar",
       "group": "A",
-      "first": true,
-      "second": false
+      "abre": "QTR"
     },
     {
       "id": 1,
       "name": "Ecuador",
       "group": "A",
-      "first": true,
-      "second": false
+      "abre": "ECU"
     },
     {
       "id": 2,
       "name": "Senegal",
       "group": "A",
-      "first": true,
-      "second": false
+      "abre": "SEN"
     },
     {
       "id": 3,
       "name": "Holanda",
       "group": "A",
-      "first": false,
-      "second": false
+      "abre": "HOL"
     },
     {
       "id": 4,
       "name": "Inglaterra",
       "group": "B",
-      "first": false,
-      "second": false
+      "abre": "ING"
     },
     {
       "id": 5,
       "name": "Irán",
-      "group": "B",
-      "first": true,
-      "second": false
+      "abre": "IRN",
+      "group": "B"
     },
     {
       "id": 6,
       "name": "EE.UU.",
       "group": "B",
-      "first": true,
-      "second": false
+      "abre": "USA"
     },
     {
       "id": 7,
       "name": "Gales",
       "group": "B",
-      "first": false,
-      "second": false
+      "abre": "GAL"
     },
     {
       "id": 8,
       "name": "Argentina",
       "group": "C",
-      "first": false,
-      "second": false
+      "abre": "ARG"
     },
     {
       "id": 9,
       "name": "A. Saudita",
       "group": "C",
-      "first": true,
-      "second": false
+      "abre": "ARA"
     },
     {
       "id": 10,
       "name": "México",
       "group": "C",
-      "first": true,
-      "second": false
+      "abre": "MEX"
     },
     {
       "id": 11,
       "name": "Polonia",
       "group": "C",
-      "first": false,
-      "second": false
+      "abre": "POL"
     },
     {
       "id": 12,
       "name": "Francia",
       "group": "D",
-      "first": false,
-      "second": false
+      "abre": "FRA"
     },
     {
       "id": 13,
       "name": "Australia",
       "group": "D",
-      "first": true,
-      "second": false
+      "abre": "AUS"
     },
     {
       "id": 14,
       "name": "Dinamarca",
       "group": "D",
-      "first": true,
-      "second": false
+      "abre": "DIN"
     },
     {
       "id": 15,
       "name": "Túnez",
       "group": "D",
-      "first": false,
-      "second": false
+      "abre": "TUN"
     },
     {
       "id": 16,
       "name": "España",
       "group": "E",
-      "first": false,
-      "second": false
+      "abre": "ESP"
     },
     {
       "id": 17,
       "name": "Costa Rica",
       "group": "E",
-      "first": true,
-      "second": false
+      "abre": "CRI"
     },
     {
       "id": 18,
       "name": "Alemania",
       "group": "E",
-      "first": true,
-      "second": false
+      "abre": "ALE"
     },
     {
       "id": 19,
       "name": "Japón",
       "group": "E",
-      "first": false,
-      "second": false
+      "abre": "JPN"
     },
     {
       "id": 20,
       "name": "Bélgica",
       "group": "F",
-      "first": false,
-      "second": false
+      "abre": "BEL"
     },
     {
       "id": 21,
       "name": "Canadá",
       "group": "F",
-      "first": true,
-      "second": false
+      "abre": "CAN"
     },
     {
       "id": 22,
       "name": "Marruecos",
       "group": "F",
-      "first": true,
-      "second": false
+      "abre": "MAR"
     },
     {
       "id": 23,
       "name": "Croacia",
       "group": "F",
-      "first": false,
-      "second": false
+      "abre": "CRO"
     },
     {
       "id": 24,
       "name": "Brasil",
       "group": "G",
-      "first": false,
-      "second": false
+      "abre": "BRA"
     },
     {
       "id": 25,
       "name": "Serbia",
       "group": "G",
-      "first": true,
-      "second": false
+      "abre": "SER"
     },
     {
       "id": 26,
-      "name": "Suizo",
+      "name": "Suiza",
       "group": "G",
-      "first": true,
-      "second": false
+      "abre": "SUI"
     },
     {
       "id": 27,
       "name": "Camerún",
       "group": "G",
-      "first": false,
-      "second": false
+      "abre": "CAM"
     },
     {
       "id": 28,
       "name": "Portugal",
       "group": "H",
-      "first": false,
-      "second": false
+      "abre": "POR"
     },
     {
       "id": 29,
       "name": "Ghana",
       "group": "H",
-      "first": true,
-      "second": false
+      "abre": "GHN"
     },
     {
       "id": 30,
       "name": "Uruguay",
       "group": "H",
-      "first": true,
-      "second": false
+      "abre": "URU"
     },
     {
       "id": 31,
       "name": "R. de Corea",
       "group": "H",
-      "first": false,
-      "second": false
+      "abre": "COR"
     }
   ]
 }

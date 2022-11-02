@@ -18,7 +18,8 @@ exports.create = (req, res) => {
     surname: req.body.surname,
     dni: req.body.dni,
     email: req.body.email,
-    tel: req.body.tel
+    tel: req.body.tel,
+    code: req.body.code
   };
 
   // Save in the database

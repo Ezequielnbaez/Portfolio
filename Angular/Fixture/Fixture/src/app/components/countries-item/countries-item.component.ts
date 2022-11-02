@@ -40,13 +40,13 @@ export class CountriesItemComponent implements OnInit {
 
   radioButtonGroupChange1(event: MatRadioChange) {
     this.selectedValue1 = event.value;
-    this.pos1.emit(this.country.name);
+    this.pos1.emit(this.country.abre);
     this.changeRadio1();
   }
 
   radioButtonGroupChange2(event: MatRadioChange) {
     this.selectedValue2 = event.value;
-    this.pos2.emit(this.country.name);
+    this.pos2.emit(this.country.abre);
     this.changeRadio2();
 
   }

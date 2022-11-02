@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms'
 import { Fixture } from 'src/app/models/fixture.model';
 import { ContactService } from 'src/app/services/contact.service';
+import { PositionsService } from "../../services/positions.service";
 
 @Component({
   selector: 'app-contact-form',
@@ -10,7 +11,7 @@ import { ContactService } from 'src/app/services/contact.service';
 })
 export class ContactFormComponent implements OnInit {
   FormData!: FormGroup;
-  constructor(private builder: FormBuilder, private contactService: ContactService) { }
+  constructor(private builder: FormBuilder, private contactService: ContactService, private appService: PositionsService) { }
   submitted = false;
   error = false;
 
@@ -26,12 +27,15 @@ export class ContactFormComponent implements OnInit {
 
 
   saveFixture(form: FormGroup) {
+    let fixCode = this.appService.getFixtureCode()
+
     const data = {
       name: form.get('Name')?.value,
       surname: form.get('Surname')?.value,
       dni: form.get('Dni')?.value,
       email: form.get('Email')?.value,
-      tel: form.get('Tel')?.value
+      tel: form.get('Tel')?.value,
+      code: fixCode
     };
     this.contactService.create(data)
       .subscribe({
