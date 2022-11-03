@@ -89,7 +89,6 @@ export class FixtureComponent implements OnInit {
   }
   
   selectPos(event: Event) {
- 
     switch ((event.target as HTMLInputElement).id) {
       case 'mob_1a':
         this.appService.updatePositiong8a(this.pos1a);

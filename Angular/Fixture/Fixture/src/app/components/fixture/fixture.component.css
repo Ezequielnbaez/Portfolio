@@ -5,3 +5,21 @@
 .st0 {
   fill: #00457E;
 }
+
+#Capa_0 {
+  display: block;
+}
+
+#Capa_1 {
+  display: none;
+}
+
+@media(max-width:500px) {
+  #Capa_0 {
+    display: none;
+  }
+
+  #Capa_1 {
+    display: block;
+  }
+}
